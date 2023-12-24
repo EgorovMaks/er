@@ -259,6 +259,11 @@ body, h2 {
   background-color: var(--color-veronika-bg);
 }
 
+.container {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 .flex-c {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -297,16 +302,16 @@ body, h2 {
   }
 }
 .header .logo {
-  width: 50px;
+  width: 70px;
 }
 @media (max-width: 470px) {
   .header .logo {
-    width: 30px;
+    width: 50px;
   }
 }
 .header__logo {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   gap: 20px;
 }
 @media (max-width: 470px) {

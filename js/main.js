@@ -177,6 +177,19 @@ btnBur.addEventListener("click", function () {
     navMenu.style.cssText = `opacity: 1;`;
   }
 });
+navMenu.addEventListener("click", function () {
+  if (navMenu.classList.contains("mobil-active")) {
+    navMenu.style.cssText = `opacity: 0;`;
+    btnBur.classList.toggle("mobil-menu-active");
+    setTimeout(() => {
+      navMenu.classList.toggle("mobil-active");
+    }, 300);
+  } else {
+    btnBur.classList.toggle("mobil-menu-active");
+    navMenu.classList.toggle("mobil-active");
+    navMenu.style.cssText = `opacity: 1;`;
+  }
+});
 
 /***/ }),
 
