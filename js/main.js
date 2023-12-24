@@ -153,8 +153,17 @@ const btnBur = document.querySelector(".neader__social-mobil");
 const navMenu = document.querySelector(".header__links");
 const menuSpan = document.querySelector(".mobil-menu-span");
 const siteContHeader = document.querySelector(".header__logo");
-const siteCont = document.querySelector(".main");
-siteCont.style.cssText = ` padding-top: ${siteContHeader.getBoundingClientRect().height + 70}px;`;
+const main = document.querySelector(".main");
+const linkHeader = document.querySelectorAll(".header__link");
+linkHeader.forEach(e => {
+  if (e.innerHTML === main.getAttribute("data-user-location")) {
+    e.classList.toggle("link-active");
+  }
+});
+
+// main.getAttribute("data-user-location")
+
+main.style.cssText = ` padding-top: ${siteContHeader.getBoundingClientRect().height + 70}px;`;
 btnBur.addEventListener("click", function () {
   if (navMenu.classList.contains("mobil-active")) {
     navMenu.style.cssText = `opacity: 0;`;
