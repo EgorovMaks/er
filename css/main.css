@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Rosamarena";
+  src: url(/fonts/rosamarena.woff2);
+}
 :root {
   --font-family: "Open Sans", sans-serif;
   --content-width: 1170px;
@@ -96,7 +100,7 @@
   --transition-4: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   --font-primary: "Montserrat";
   --font-secondary: "TenorSans";
-  --font-special: "rosamarena";
+  --font-special: "Rosamarena";
   --font-alt: "Source Serif Pro", serif;
   --font-size-b1: 24px;
   --font-size-b2: 18px;
@@ -250,13 +254,32 @@ button {
   border-radius: 0;
 }
 
-body, h2 {
+body,
+h2,
+h3 {
   font-family: var(--font-primary);
   font-weight: var(--f-medium);
+  color: var(--color-body);
 }
 
 .site-container {
   background-color: var(--color-veronika-bg);
+}
+
+h3 {
+  margin-bottom: 30px;
+  font-size: 20px;
+  color: var(--color-heading);
+}
+
+.text {
+  font-size: 16px;
+  font-weight: var(--f-regular);
+  line-height: 1.45;
+}
+
+.cart-bottom {
+  padding-bottom: 40px;
 }
 
 .container {
@@ -271,6 +294,16 @@ body, h2 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.flex-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .header .container {
@@ -513,5 +546,27 @@ body, h2 {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+.interesting__card-title {
+  color: var(--color-heading);
+}
+.interesting__card-text-wrap {
+  gap: 30px;
+}
+.interesting .li {
+  line-height: 2;
+}
+
+.about-me__title {
+  color: var(--color-violet);
+  font-family: var(--font-special);
+  font-size: 64px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+.about-me__text {
+  margin-bottom: 10px;
 }
 /*# sourceMappingURL=main.css.map */
