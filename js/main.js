@@ -152,6 +152,9 @@ __webpack_require__.r(__webpack_exports__);
 const btnBur = document.querySelector(".neader__social-mobil");
 const navMenu = document.querySelector(".header__links");
 const menuSpan = document.querySelector(".mobil-menu-span");
+const siteContHeader = document.querySelector(".header__logo");
+const siteCont = document.querySelector(".main");
+siteCont.style.cssText = ` padding-top: ${siteContHeader.getBoundingClientRect().height + 70}px;`;
 btnBur.addEventListener("click", function () {
   if (navMenu.classList.contains("mobil-active")) {
     navMenu.style.cssText = `opacity: 0;`;
