@@ -288,10 +288,20 @@ body, h2 {
 .header .logo {
   width: 50px;
 }
+@media (max-width: 470px) {
+  .header .logo {
+    width: 30px;
+  }
+}
 .header__logo {
   padding-top: 20px;
   padding-bottom: 20px;
   gap: 20px;
+}
+@media (max-width: 470px) {
+  .header__logo {
+    gap: 10px;
+  }
 }
 .header__logo:hover .header__logo-subtitle, .header__logo:hover .header__logo-title {
   color: var(--color-primary) !important;
@@ -300,6 +310,16 @@ body, h2 {
   color: var(--color-heading);
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
+}
+@media (max-width: 470px) {
+  .header__logo-subtitle, .header__logo-title {
+    font-size: 12px;
+  }
+}
+@media (max-width: 380px) {
+  .header__logo-subtitle, .header__logo-title {
+    display: none;
+  }
 }
 .header__logo-title {
   font-weight: var(--f-bold);
