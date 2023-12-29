@@ -296,6 +296,12 @@ h3 {
   align-items: center;
 }
 
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .flex-column {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -306,13 +312,13 @@ h3 {
   flex-direction: column;
 }
 
-.header .container {
+.header {
+  position: fixed;
   width: 100%;
-  margin-left: 0;
-  margin-right: 0;
+}
+.header .container {
   padding-left: 30px;
   padding-right: 30px;
-  position: fixed;
   background-color: var(--color-veronika-bg);
   -webkit-box-shadow: 0 20px 34px rgba(0, 0, 0, 0.0509803922);
   box-shadow: 0 20px 34px rgba(0, 0, 0, 0.0509803922);
@@ -321,6 +327,9 @@ h3 {
   justify-content: space-between;
   color: var(--color-heading);
   z-index: 1;
+}
+.header .container:last-child .header__link {
+  padding-top: 0;
 }
 @media (max-width: 500px) {
   .header .container {
@@ -376,6 +385,7 @@ h3 {
 }
 .header__links {
   gap: 15px;
+  margin: 0 auto;
 }
 @media (max-width: 1100px) {
   .header__links {
@@ -568,5 +578,65 @@ h3 {
 }
 .about-me__text {
   margin-bottom: 10px;
+}
+
+.contacts__top-question {
+  background: #ff4f25;
+}
+.contacts__top-consultation {
+  background: var(--color-card-5);
+}
+.contacts__bottom {
+  margin-top: 30px;
+}
+.contacts__bottom, .contacts__top {
+  gap: 15px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.contacts__top-wats {
+  background: #4dc85a;
+}
+.contacts__top-wats svg {
+  -webkit-transform: translateY(-1px);
+  -ms-transform: translateY(-1px);
+  transform: translateY(-1px);
+}
+.contacts__top-telegramm {
+  background-color: #0084c6;
+}
+.contacts__top-vk {
+  background: #145b87;
+}
+
+.contact-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 14.25rem;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 500;
+  text-align: center;
+  padding: 0.75em 1.5em;
+  border: none;
+  border-radius: 2em;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+}
+.contact-btn svg {
+  display: block;
+  width: 16px;
+  height: 16px;
 }
 /*# sourceMappingURL=main.css.map */

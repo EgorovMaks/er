@@ -152,7 +152,7 @@ __webpack_require__.r(__webpack_exports__);
 const btnBur = document.querySelector(".neader__social-mobil");
 const navMenu = document.querySelector(".header__links");
 const menuSpan = document.querySelector(".mobil-menu-span");
-const siteContHeader = document.querySelector(".header__logo");
+const siteContHeader = document.querySelector(".header");
 const main = document.querySelector(".main");
 const linkHeader = document.querySelectorAll(".header__link");
 linkHeader.forEach(e => {
