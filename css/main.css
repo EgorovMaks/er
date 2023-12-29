@@ -2,7 +2,7 @@
   font-family: "Rosamarena";
   src: url(/fonts/rosamarena.woff2);
 }
-:root {
+:root { 
   --font-family: "Open Sans", sans-serif;
   --content-width: 1170px;
   --container-offset: 15px;
