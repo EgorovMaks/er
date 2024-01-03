@@ -259,7 +259,7 @@ h2,
 h3 {
   font-family: var(--font-primary);
   font-weight: var(--f-medium);
-  color: var(--color-body);
+  color: var(--color-heading);
 }
 
 body {
@@ -271,7 +271,6 @@ body {
 }
 
 h3 {
-  margin-bottom: 30px;
   font-size: 20px;
   color: var(--color-heading);
 }
@@ -562,14 +561,51 @@ h3 {
   transform: rotate(45deg);
 }
 
+.interesting {
+  padding-bottom: 30px;
+}
+.interesting__card {
+  margin-bottom: 30px;
+}
+.interesting .noactive {
+  width: 100%;
+  background: var(--color-white);
+  border-radius: var(--radius);
+  -webkit-box-shadow: var(--shadow-1);
+  box-shadow: var(--shadow-1);
+  overflow: hidden;
+  padding: 30px;
+  cursor: pointer;
+}
+.interesting .noactive .interesting__card-text {
+  opacity: 0;
+  height: 0;
+}
+.interesting .noactive .interesting__card-text span {
+  height: 0;
+}
+.interesting .noactive .podtext {
+  opacity: 1;
+  height: auto;
+  text-indent: 30px;
+}
 .interesting__card-title {
+  text-indent: 30px;
   color: var(--color-heading);
+}
+.interesting__card-text span {
+  display: block;
+  text-indent: 30px;
+  padding-top: 16px;
 }
 .interesting__card-text-wrap {
   gap: 30px;
 }
 .interesting .li {
   line-height: 2;
+}
+.interesting .active {
+  background: red;
 }
 
 .about-me__title {
