@@ -2,7 +2,7 @@
   font-family: "Rosamarena";
   src: url(/fonts/rosamarena.woff2);
 }
-:root { 
+:root {
   --font-family: "Open Sans", sans-serif;
   --content-width: 1170px;
   --container-offset: 15px;
@@ -260,6 +260,10 @@ h3 {
   font-family: var(--font-primary);
   font-weight: var(--f-medium);
   color: var(--color-body);
+}
+
+body {
+  font-size: 16px;
 }
 
 .site-container {
@@ -589,6 +593,23 @@ h3 {
 .contacts__bottom {
   margin-top: 30px;
 }
+@media (max-width: 1180px) {
+  .contacts__bottom {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+  }
+}
+@media (max-width: 700px) {
+  .contacts__bottom {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .contacts__bottom, .contacts__top {
   gap: 15px;
   -webkit-box-pack: center;
@@ -621,6 +642,7 @@ h3 {
   -ms-flex-pack: center;
   justify-content: center;
   gap: 8px;
+  width: 300px;
   min-width: 14.25rem;
   color: #fff;
   font-size: 1rem;
@@ -638,5 +660,21 @@ h3 {
   display: block;
   width: 16px;
   height: 16px;
+}
+@media (max-width: 1180px) {
+  .contact-btn {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 700px) {
+  .contact-btn {
+    width: 80%;
+  }
+}
+@media (max-width: 400px) {
+  .contact-btn {
+    width: 100%;
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
